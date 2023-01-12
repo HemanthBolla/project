@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAKE JOB POST</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body{
+        background-color: #0b0c10;
+        color: #66fcf1;
+    }
+    .jumbotron
+    {
+        background-color: #0b0c10;
+        color: #66fcf1;
+    }
+    textarea
+    {
+        background-color: #0b0c10;
+        color: #66fcf1;
+    }
+    
+  </style>
+</head>
+<body >
+    
+    <div class="container">
+    <div class="jumbotron text-center">
+        <h3>FAKE JOB POST PREDICTION</h3>
+        
+      </div>
+    </div>
+        
+      <div class="container text-center">
+        <form action="{{url_for('predict')}}" method="POST">
+            <h4> Enter your post </h4>
+            <textarea name="message" rows="10" cols="50"></textarea></textarea>
+            <br/>
+            <input type="submit" class=" btn btn-info btn-lg" value="predict">
+        </form>
+      </div>
+
+    
+        
+    
+    
+</body>
+</html>
